@@ -17,8 +17,21 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
+#from views import test
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('test/',views.test)
+      path('admin/', admin.site.urls),
+      path("test/",views.test),
+      path("about/",views.AboutUs),
+        path("contact/",views.contactUs),
+    path("",views.home),
+    #http://127.0.0.1/:8000/recap
+    path("recap/",views.reacp),
+    path("recipe/",views.recipe),
+
+
+    
+
 ]
+
+
