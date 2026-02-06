@@ -66,6 +66,7 @@ TEMPLATES = [
     },
 ]
 
+        
 WSGI_APPLICATION = 'learning26.wsgi.application'
 
 
@@ -74,9 +75,15 @@ WSGI_APPLICATION = 'learning26.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+       'ENGINE':'django.db.backends.postgresql',
+       'NAME':'learning26',
+       'USER':'postgres',
+       'PASSWORD':'2004',
+       'HOST':'localhost',
+       'PORT':'5432',
     }
+
+    
 }
 
 
