@@ -16,7 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from . import views
+from . import views 
+from django.urls import include
 #from views import test
 
 urlpatterns = [
@@ -29,6 +30,10 @@ urlpatterns = [
     path("recap/",views.reacp),
     path("recipe/",views.recipe),
 
+    #app level url config
+    path("student/",include("student.urls")),
+    
+    
 
     
 

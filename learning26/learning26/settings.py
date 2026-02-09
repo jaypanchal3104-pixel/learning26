@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'learning26.wsgi.application'
 DATABASES = {
     'default': {
        'ENGINE':'django.db.backends.postgresql',
-       'NAME':'learning26',
+       'NAME':'postgres',
        'USER':'postgres',
        'PASSWORD':'2004',
        'HOST':'localhost',
